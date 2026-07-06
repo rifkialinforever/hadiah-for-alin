@@ -1,0 +1,1345 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    a
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spesial Gift Buat Arina 💞</title>
+    <meta name="description" content="TikTok @feelthisray - Script HTML by feeldream.id" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="description" content="Script HTML Untukmu" />
+    <meta property="og:title" content="Ini Untukmu ✨" />
+    <meta property="og:description" content="Spesial Gift Buat Kamu ✨" />
+    <meta
+      property="og:image"
+      content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMDugl2siKVTnQUhkzqZXmNhnUl_IXm-tsnodgHf4C3dPn6v4gz06nVm1ASqpRXO65Dg3PkYB9bKsThBPUxygLD9Euem9SSTr0LRIGK9x5uaLvK4WIPn6VlSx0qSrPGhTknGVHeVMpioiBcXiqrk-dF3d4SYS8QIkWkDlMgRrdF4vw_iw-EOgTYcwo6xhs/s300/1000314955.jpg"
+    />
+    <meta property="og:image:alt" content="hbd" />
+    <meta property="og:url" content="kado.feeldream.id" />
+    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Handlee&family=Sriracha&display=swap" rel="stylesheet" />
+    <script src="https://htmlku.com/prod/typeit.js"></script>
+    <link rel="stylesheet" href="https://htmlku.com/prod/kado/style.css" />
+
+    <style>
+      /* Reset & Core Responsiveness */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Background Fit */
+      .background-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        z-index: -2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Container Umum (Kotak) */
+      .kotak {
+        width: 90% !important;
+        max-width: 440px !important;
+        margin: auto !important;
+        padding: 25px 20px !important;
+        border-radius: 24px !important;
+        background: rgba(255, 255, 255, 0.75) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18) !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        box-sizing: border-box;
+        z-index: 10;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      /* Halaman 1: Amplop & Penyelarasan Jarak Tombol Buka */
+      #hal1 {
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .envlope-wrapper {
+        transform: scale(1) !important;
+        margin-bottom: 80px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .reset {
+        position: relative !important;
+        z-index: 1000 !important;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px !important;
+      }
+
+      .reset button {
+        background: #ff7675 !important;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 25px !important;
+        padding: 14px 38px !important;
+        font-family: "Montserrat", sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        cursor: pointer !important;
+        box-shadow: 0 8px 15px rgba(255, 118, 117, 0.3) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .reset button:hover {
+        background: #ff5252 !important;
+        transform: scale(1.05) translateY(-2px) !important;
+        box-shadow: 0 10px 20px rgba(255, 118, 117, 0.4) !important;
+      }
+
+      /* Halaman 2: Memory Game Responsiveness & 3D Cards */
+      #papanGame {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 8px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 15px auto !important;
+        perspective: 1000px;
+      }
+
+      /* Mengunci rasio kartu agar selalu kotak sempurna */
+      #papanGame .card {
+        aspect-ratio: 1 / 1 !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 12px !important;
+        font-size: 22px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition:
+          transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          box-shadow 0.3s ease !important;
+        cursor: pointer;
+      }
+
+      #papanGame .card:hover {
+        transform: scale(1.06) rotateY(12deg) !important;
+        box-shadow: 0 8px 20px rgba(255, 118, 117, 0.3) !important;
+      }
+
+      /* Halaman 4: Wadah Pesan & Teks Panjang */
+      #containerPesan {
+        max-height: 250px;
+        overflow-y: auto;
+        padding-right: 5px;
+        margin: 15px 0;
+        text-align: center;
+      }
+
+      /* Custom Scrollbar untuk kotak pesan agar tetap estetik */
+      #containerPesan::-webkit-scrollbar {
+        width: 4px;
+      }
+      #containerPesan::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
+
+      /* Polaroid Frame Style & Tap-to-Zoom integration */
+      .polaroid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 12px auto 10px auto;
+        perspective: 1000px;
+      }
+
+      .polaroid-frame {
+        background: #ffffff;
+        padding: 10px 10px 22px 10px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transform: rotate(-3deg);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        width: 170px;
+        max-width: 100%;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .polaroid-frame:hover {
+        transform: rotate(0deg) scale(1.08);
+        box-shadow: 0 15px 35px rgba(255, 118, 117, 0.25);
+      }
+
+      /* Zoomed state dengan ukuran fisik lebih besar (Ultra Sharp & Tanpa Efek Buram) */
+      .polaroid-frame-zoomed {
+        background: #ffffff;
+        padding: 15px 15px 32px 15px;
+        box-shadow: 0 15px 45px rgba(255, 118, 117, 0.35); /* Efek cahaya fokus pink-coral lembut */
+        border-radius: 4px;
+        width: 280px;
+        max-width: 85vw;
+        transform: scale(0.5);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+      }
+
+      .polaroid-backdrop.active .polaroid-frame-zoomed {
+        transform: scale(1);
+      }
+
+      .polaroid-image-zoomed {
+        width: 250px;
+        height: 250px;
+        max-width: 100%;
+        object-fit: cover;
+        border: 1px solid #eee;
+        display: block;
+        border-radius: 2px;
+      }
+
+      /* Efek Fokus Kamera: Mem-blur seluruh website di latar belakang */
+      .polaroid-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.15); /* Latar belakang sangat transparan */
+        backdrop-filter: blur(8px); /* Membuat latar belakang menjadi bokeh/tidak fokus */
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 999998;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .polaroid-backdrop.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      /* Tape effect on top of Polaroid */
+      .polaroid-frame::before,
+      .polaroid-frame-zoomed::before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%) rotate(2deg);
+        width: 60px;
+        height: 18px;
+        background-color: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        border-left: 1px dashed rgba(0, 0, 0, 0.1);
+        border-right: 1px dashed rgba(0, 0, 0, 0.1);
+      }
+
+      .polaroid-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 1px solid #eee;
+        display: block;
+        border-radius: 2px;
+        transition: all 0.5s ease;
+      }
+
+      .polaroid-hint {
+        font-family: "Handlee", cursive;
+        font-size: 11px;
+        color: #ff7675;
+        margin-top: -3px;
+        margin-bottom: 8px;
+        text-shadow: 0 1px 1px white;
+        animation: hintBounce 1.2s infinite alternate;
+      }
+
+      @keyframes hintBounce {
+        0% {
+          transform: translateY(0);
+          opacity: 0.7;
+        }
+        100% {
+          transform: translateY(-3px);
+          opacity: 1;
+        }
+      }
+
+      /* Interactive Floating Balloons */
+      .floating-balloon {
+        position: fixed;
+        bottom: -100px;
+        z-index: 5;
+        pointer-events: auto;
+        cursor: pointer;
+        animation: floatUp 10s linear forwards;
+        transition:
+          transform 0.2s ease,
+          opacity 0.2s ease;
+      }
+
+      .floating-balloon:hover {
+        transform: scale(1.15);
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          left: var(--start-left);
+        }
+        100% {
+          transform: translateY(-115vh) rotate(var(--end-rotation));
+          left: var(--end-left);
+        }
+      }
+
+      /* Custom Cursor Trail Particles & Falling Hearts */
+      .trail-particle {
+        position: fixed;
+        pointer-events: none;
+        font-size: 16px;
+        z-index: 9998;
+        animation: flyOut 1s forwards ease-out;
+      }
+
+      @keyframes flyOut {
+        0% {
+          transform: translate(-50%, -50%) scale(1) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-50%, -150%) scale(0.5) rotate(180deg);
+          opacity: 0;
+        }
+      }
+
+      /* Falling Hearts */
+      .falling-heart {
+        position: fixed;
+        top: -20px;
+        pointer-events: none;
+        z-index: -1;
+        animation: fall linear infinite;
+        color: rgba(255, 118, 117, 0.5);
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        90% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateY(105vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* --- BEAUTIFICATION ADDITIONS --- */
+      /* Animasi amplop melayang */
+      @keyframes floatEnvelope {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      /* Animasi tombol berdenyut memanggil klik */
+      @keyframes pulseButton {
+        0% {
+          box-shadow: 0 0 0 0 rgba(255, 118, 117, 0.6);
+        }
+        70% {
+          box-shadow: 0 0 0 12px rgba(255, 118, 117, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(255, 118, 117, 0);
+        }
+      }
+
+      /* Teks gradien yang berkilau bergerak */
+      .gradient-text {
+        background: linear-gradient(45deg, #ff7675, #fd79a8, #e84393, #ff7675);
+        background-size: 300% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shineText 4s linear infinite;
+        font-weight: bold !important;
+      }
+      @keyframes shineText {
+        to {
+          background-position: 300% center;
+        }
+      }
+
+      /* Transisi memantul halus saat kotak (halaman) muncul */
+      .kotak:not(.sembunyi) {
+        animation: fadeInKotak 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+      @keyframes fadeInKotak {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -40%) scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      /* Terapkan animasi ke elemen yang ada */
+      .envlope-wrapper {
+        animation: floatEnvelope 3.5s ease-in-out infinite !important;
+      }
+      .reset button,
+      .kotak button {
+        animation: pulseButton 2s infinite !important;
+      }
+
+      /* Skala Responsif untuk Layar Sangat Kecil (Mobile Kecil) */
+      @media (max-width: 360px) {
+        .kotak {
+          width: 92% !important;
+          padding: 15px 12px !important;
+        }
+        .envlope-wrapper {
+          transform: scale(0.8) !important;
+          margin-bottom: 50px !important;
+        }
+        #papanGame {
+          max-width: 250px !important;
+          gap: 6px !important;
+        }
+        #papanGame .card {
+          font-size: 18px !important;
+        }
+        h2 {
+          font-size: 16px !important;
+        }
+        p {
+          font-size: 13px !important;
+        }
+        .polaroid-frame {
+          width: 140px !important;
+          padding: 8px 8px 18px 8px;
+        }
+        .polaroid-image {
+          width: 120px !important;
+          height: 120px !important;
+        }
+        .polaroid-frame-zoomed {
+          width: 230px !important;
+          padding: 10px 10px 24px 10px !important;
+        }
+        .polaroid-image-zoomed {
+          width: 210px !important;
+          height: 210px !important;
+        }
+      }
+
+      /* Skala Responsif untuk Layar Laptop / Komputer Lebar */
+      @media (min-width: 1024px) {
+        .envlope-wrapper {
+          transform: scale(1.1) !important;
+          margin-bottom: 110px !important;
+        }
+        .kotak {
+          max-width: 460px !important;
+          padding: 35px 30px !important;
+        }
+      }
+    </style>
+
+    <!-- GLOBAL AUDIO CONTROLLER (BUG FIX) -->
+    <!-- Script ini mencegah lagu diputar ganda/bersamaan dan mengatur agar lagu diulang tepat 1x. -->
+    <script>
+      (function () {
+        const originalPlay = HTMLAudioElement.prototype.play;
+
+        HTMLAudioElement.prototype.play = function () {
+          // Memastikan lagu tidak berulang terus-menerus secara otomatis
+          this.loop = false;
+
+          // Memasang penghitung dan pengulang hanya satu kali
+          if (typeof this._playCount === "undefined") {
+            this._playCount = 0;
+            this.addEventListener("ended", function () {
+              this._playCount++;
+              if (this._playCount < 2) {
+                // Diulang kembali 1x
+                this.currentTime = 0;
+                originalPlay.call(this).catch((err) => console.log("Gagal memutar ulang:", err));
+              } else {
+                console.log("Lagu selesai diputar dan diulang 1 kali.");
+              }
+            });
+          }
+          return originalPlay.call(this);
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Backdrop overlay for Zoomed Polaroid (BERSIH DARI EFEK BLUR) -->
+    <div id="polaroidBackdrop" class="polaroid-backdrop" onclick="closePolaroidZoom()">
+      <div class="polaroid-frame-zoomed" onclick="event.stopPropagation()">
+        <img
+          src="https://i.ibb.co.com/ksr62yxj/Whats-App-Image-2026-07-02-at-19-17-24.jpg"
+          alt="Foto Cantik Arina"
+          class="polaroid-image-zoomed"
+          onerror="
+            this.onerror = null;
+            this.src =
+              'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMDugl2siKVTnQUhkzqZXmNhnUl_IXm-tsnodgHf4C3dPn6v4gz06nVm1ASqpRXO65Dg3PkYB9bKsThBPUxygLD9Euem9SSTr0LRIGK9x5uaLvK4WIPn6VlSx0qSrPGhTknGVHeVMpioiBcXiqrk-dF3d4SYS8QIkWkDlMgRrdF4vw_iw-EOgTYcwo6xhs/s300/1000314955.jpg';
+          "
+        />
+      </div>
+    </div>
+
+    <!-- Celebration overlay canvas for high performance confetti & smoke particles -->
+    <canvas id="celebration-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 99999"></canvas>
+
+    <!-- Audio dengan lagu romantis Angel Baby (Atribut loop dihapus agar bisa dikontrol manual) -->
+    <audio src="https://feeldreams.github.io/audio/angelbaby.mp3" id="linkmp3" style="display: none"></audio>
+
+    <!-- Background / Wallpaper -->
+    <div
+      class="background-overlay"
+      data-src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDxPxdEWBDAyw0TWLqZ5z5Gzak103RGpxKBgW_m0kJ4-_ce2BflVdXqTHzbwGfcCzoC_jMrM3WSDbE9Rgj44d4NZC2oyykxuIfDblLQjdlCnU_qAvLw9qUH38FdpmDOYuOTtWFdIo8DUdS4xldaTxA17Ut_RjOSTb28jJMYDqN2yItm-v1OUomSHyeiyEz/s1600/89250.jpg"
+    ></div>
+
+    <!-- Halaman 1: Envelope -->
+    <div id="hal1">
+      <div class="envlope-wrapper">
+        <div id="envelope" class="close">
+          <div class="front flap"></div>
+          <div class="front pocket"></div>
+          <div class="letter">
+            <div class="letter-corner corner-tl"></div>
+            <div class="letter-corner corner-br"></div>
+            <div class="message">
+              <p class="gradient-text" style="font-size: 1.2rem">Alooo Bub! ✨</p>
+            </div>
+          </div>
+          <div class="hearts">
+            <div class="heart a1"></div>
+            <div class="heart a2"></div>
+            <div class="heart a3"></div>
+          </div>
+          <div class="sparkles">
+            <div class="sparkle s1"></div>
+            <div class="sparkle s2"></div>
+            <div class="sparkle s3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="reset">
+        <button onclick="bukaEnvelope()">Buka</button>
+      </div>
+    </div>
+
+    <!-- Halaman 2: Memory Game -->
+    <div id="hal2" class="kotak sembunyi">
+      <div class="decor decor-tl"></div>
+      <div class="decor decor-br"></div>
+      <canvas id="game-canvas"></canvas>
+      <h2 class="gradient-text" style="font-size: 18.5px">A Little Game for You 🎁</h2>
+      <p style="font-size: 14.5px">Balik 2 Kartu yang Sama! 🫣</p>
+      <div id="kotakPesan"></div>
+      <div id="papanGame" class="papanGame"></div>
+      <p id="statusGame"></p>
+      <button id="lanjut" onclick="pindahHal(3)" class="sembunyi">Lihat Pesan Cinta!</button>
+      <button id="ulang" onclick="mulaiHal2()" class="tombolCadangan sembunyi">Coba Lagi!</button>
+    </div>
+
+    <!-- Halaman 3: Make a Wish -->
+    <div id="hal3" class="kotak sembunyi">
+      <div class="decor decor-tl"></div>
+      <div class="decor decor-br"></div>
+      <h2 class="gradient-text" style="font-size: 18.5px">Make a Wish 🎉</h2>
+      <img src="https://htmlku.com/0/panda/kue.gif" style="width: 0; height: auto; margin: 10px auto; display: block" />
+      <!-- Kue + Lilin CSS -->
+      <div class="kue-container">
+        <div class="lilin-container">
+          <div class="lilin">
+            <div class="api" id="apiLilin"></div>
+          </div>
+        </div>
+
+        <div class="kue">
+          <div class="lapisan lapisan-atas">
+            <div class="krim"></div>
+            <div class="krim"></div>
+            <div class="krim"></div>
+          </div>
+          <div class="lapisan lapisan-tengah">
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+          </div>
+          <div class="lapisan lapisan-bawah">
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+            <div class="coklat"></div>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size: 14.5px">Tutup matamu, buat permintaan,<br />lalu tiup lilinnya yaw sayang! 🫣</p>
+      <button onclick="tiupLilin()">Tiup Lilin 🌬️</button>
+    </div>
+
+    <!-- Halaman 4: Pesan Akhir (Lama Hal3) -->
+    <div id="hal4" class="kotak sembunyi">
+      <div class="decor decor-tl"></div>
+      <div class="decor decor-br"></div>
+
+      <!-- Stiker Gif -->
+      <div id="stiker4" class="stiker" style="margin-bottom: 5px">
+        <img id="stiker4a" src="https://htmlku.com/0/panda/kue.gif" />
+        <img id="stiker4b" class="sembunyi" src="https://htmlku.com/0/panda/semprot.gif" />
+        <img id="stiker4c" class="sembunyi" src="https://htmlku.com/0/panda/terlope.gif" />
+      </div>
+
+      <!-- Tambahan Foto Cantik Dari WhatsApp dalam Bingkai Polaroid Estetik -->
+      <div class="polaroid-container">
+        <div class="polaroid-frame" id="arinaPolaroid" onclick="togglePolaroidZoom(event)">
+          <img
+            src="https://i.ibb.co.com/ksr62yxj/Whats-App-Image-2026-07-02-at-19-17-24.jpg"
+            alt="Foto Cantik Arina"
+            class="polaroid-image"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMDugl2siKVTnQUhkzqZXmNhnUl_IXm-tsnodgHf4C3dPn6v4gz06nVm1ASqpRXO65Dg3PkYB9bKsThBPUxygLD9Euem9SSTr0LRIGK9x5uaLvK4WIPn6VlSx0qSrPGhTknGVHeVMpioiBcXiqrk-dF3d4SYS8QIkWkDlMgRrdF4vw_iw-EOgTYcwo6xhs/s300/1000314955.jpg';
+            "
+          />
+        </div>
+        <div class="polaroid-hint">(Ketuk fotonya 👆)</div>
+      </div>
+
+      <div id="containerPesan">
+        <p id="teksCinta"></p>
+        <p id="pesanAkhir"></p>
+        <p id="teksLucu"></p>
+      </div>
+      <button style="display: none" onclick="shareWa()">Kirim ke Dia!</button>
+    </div>
+    <div class="tombol">
+      <button style="padding: 4px 12px" onclick="balasWa()">💌 Balas</button>
+    </div>
+
+    <!-- Circle Animation -->
+    <div>
+      <div>
+        <div class="circ">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // --- SANDBOX COMPATIBILITY POLYFILLS ---
+      // Mencegah SecurityError di iframe sandbox jika skrip eksternal mengakses storage
+      (function () {
+        try {
+          var testStorage = window.localStorage;
+        } catch (e) {
+          console.warn("[Platform Fix] LocalStorage diblokir sandbox. Mengaktifkan Memory-Storage fallback.");
+          const createMockStorage = () => {
+            let store = {};
+            return {
+              getItem: function (key) {
+                return store[key] || null;
+              },
+              setItem: function (key, val) {
+                store[key] = String(val);
+              },
+              removeItem: function (key) {
+                delete store[key];
+              },
+              clear: function () {
+                store = {};
+              },
+              key: function (i) {
+                return Object.keys(store)[i] || null;
+              },
+              get length() {
+                return Object.keys(store).length;
+              },
+            };
+          };
+          Object.defineProperty(window, "localStorage", { value: createMockStorage(), writable: true });
+          Object.defineProperty(window, "sessionStorage", { value: createMockStorage(), writable: true });
+        }
+
+        try {
+          var testCookie = document.cookie;
+        } catch (e) {
+          let cookieData = "";
+          Object.defineProperty(document, "cookie", {
+            get: function () {
+              return cookieData;
+            },
+            set: function (val) {
+              cookieData = val;
+            },
+          });
+        }
+      })();
+    </script>
+
+    <script>
+      // Edit Icon Memory Game di Sini
+      const kartu = [
+        { id: 3, icon: "🌺", pesan: "" },
+        { id: 5, icon: "🎁", pesan: "" },
+        { id: 1, icon: "🎉", pesan: "" },
+        { id: 6, icon: "💘", pesan: "" },
+        { id: 2, icon: "🥳", pesan: "" },
+        { id: 4, icon: "💝", pesan: "" },
+        { id: 1, icon: "🎉", pesan: "" },
+        { id: 3, icon: "🌺", pesan: "" },
+        { id: 5, icon: "🎁", pesan: "" },
+        { id: 2, icon: "🥳", pesan: "" },
+        { id: 4, icon: "💝", pesan: "" },
+        { id: 6, icon: "💘", pesan: "" },
+      ];
+
+      // Edit Kata-kata di Sini
+      const txtDoa = "<b style='font-size:20px'>Happy Birthday Sayangku! 🥳</b>";
+      const txtPesanAkhir =
+        "Kita make a wish di hari ulang tahunmu ini yaa Bub 🫣 Semoga kamu selalu diberi kesehatan, hati yang tenang, dan langkah yang dimudahkan dalam setiap rencana baikmu serta kebahagiaan selalu menyertaimu 🫶<br><br>Semoga di usia yang baru ini, Arina Husnul Nafisah kesayanganku makin kuat, makin sabar, and makin percaya sama diri sendiri. Apa pun yang kamu impikan, pelan-perlu semoga satu per satu bisa terwujud dengan cara terbaik 💕<br><br>Semangat terus buat kejar semua keinginan kamuu, jangan pernah takut gagal ya sayang, aku bakal selalu ada, dukung dan support kamu di sini. Oh ya, jangan lupa untuk selalu bahagia yaa bub 💫 I love you so much!";
+      const txtLucu = "Terakhir,<br><b>Happy Level Up Day Bub 🎉</b>And ...<br><b style='font-size:18px'>Have a Fabulous Birthday Sayang 🥳</b>";
+    </script>
+
+    <!-- Membuka file core script eksternal terlebih dahulu -->
+    <script src="https://htmlku.com/prod/kado/script.js"></script>
+
+    <script>
+      // --- WEB AUDIO API SYNTHESIZER FOR SOUND EFFECTS ---
+      const AudioSynth = {
+        ctx: null,
+        init() {
+          if (!this.ctx) {
+            this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+          }
+        },
+        // Efek suara ketika kartu dibalik
+        playFlip() {
+          this.init();
+          try {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(300, this.ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(600, this.ctx.currentTime + 0.15);
+            gain.gain.setValueAtTime(0.1, this.ctx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.01, this.ctx.currentTime + 0.15);
+            osc.start();
+            osc.stop(this.ctx.currentTime + 0.16);
+          } catch (e) {
+            console.log(e);
+          }
+        },
+        // Efek suara ketika 2 kartu cocok
+        playMatch() {
+          this.init();
+          try {
+            const now = this.ctx.currentTime;
+            const playNote = (freq, delay, dur) => {
+              const osc = this.ctx.createOscillator();
+              const gain = this.ctx.createGain();
+              osc.connect(gain);
+              gain.connect(this.ctx.destination);
+              osc.type = "triangle";
+              osc.frequency.setValueAtTime(freq, now + delay);
+              gain.gain.setValueAtTime(0.12, now + delay);
+              gain.gain.linearRampToValueAtTime(0.01, now + delay + dur);
+              osc.start(now + delay);
+              osc.stop(now + delay + dur);
+            };
+            playNote(523.25, 0, 0.15); // C5
+            playNote(659.25, 0.08, 0.2); // E5
+          } catch (e) {}
+        },
+        // Efek suara embusan tiup lilin
+        playWind() {
+          this.init();
+          try {
+            const bufferSize = this.ctx.sampleRate * 0.4; // 0.4 detik
+            const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+              data[i] = Math.random() * 2 - 1;
+            }
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = buffer;
+            const filter = this.ctx.createBiquadFilter();
+            filter.type = "lowpass";
+            filter.frequency.setValueAtTime(400, this.ctx.currentTime);
+            filter.frequency.exponentialRampToValueAtTime(50, this.ctx.currentTime + 0.4);
+            const gain = this.ctx.createGain();
+            gain.gain.setValueAtTime(0.3, this.ctx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.01, this.ctx.currentTime + 0.4);
+            noise.connect(filter);
+            filter.connect(gain);
+            gain.connect(this.ctx.destination);
+            noise.start();
+          } catch (e) {}
+        },
+        // Melodi lonceng magis saat lilin padam & kado meledak
+        playChimes() {
+          this.init();
+          try {
+            const now = this.ctx.currentTime;
+            const notes = [523.25, 587.33, 659.25, 783.99, 880.0, 1046.5]; // C5, D5, E5, G5, A5, C6
+            notes.forEach((freq, idx) => {
+              const osc = this.ctx.createOscillator();
+              const gain = this.ctx.createGain();
+              osc.connect(gain);
+              gain.connect(this.ctx.destination);
+              osc.type = "sine";
+              osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+              gain.gain.setValueAtTime(0.1, now + idx * 0.08);
+              gain.gain.linearRampToValueAtTime(0.001, now + idx * 0.08 + 0.4);
+              osc.start(now + idx * 0.08);
+              osc.stop(now + idx * 0.08 + 0.45);
+            });
+          } catch (e) {}
+        },
+      };
+
+      // --- POLAROID INTERACTION: ZOOM & BURST ---
+      function togglePolaroidZoom(event) {
+        event.stopPropagation();
+        const backdrop = document.getElementById("polaroidBackdrop");
+
+        backdrop.classList.add("active");
+
+        // Trigger efek kembang api hati kecil di sekeliling foto asli
+        const frame = document.getElementById("arinaPolaroid");
+        const rect = frame.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+
+        // Mainkan nada magis lembut saat di-zoom
+        AudioSynth.playMatch();
+
+        // Letuskan partikel hati
+        for (let i = 0; i < 25; i++) {
+          const heart = document.createElement("div");
+          heart.className = "trail-particle";
+          heart.textContent = "💖";
+          heart.style.left = x + "px";
+          heart.style.top = y + "px";
+
+          const angle = Math.random() * Math.PI * 2;
+          const distance = Math.random() * 80 + 40;
+          const targetX = Math.cos(angle) * distance;
+          const targetY = Math.sin(angle) * distance;
+
+          heart.style.setProperty("--tx", targetX + "px");
+          heart.style.setProperty("--ty", targetY + "px");
+
+          // Animasi ekspansi partikel
+          heart.style.transition = "transform 0.8s ease-out, opacity 0.8s ease-out";
+          document.body.appendChild(heart);
+
+          setTimeout(() => {
+            heart.style.transform = `translate(${targetX}px, ${targetY}px) scale(0.4)`;
+            heart.style.opacity = "0";
+          }, 10);
+
+          setTimeout(() => heart.remove(), 850);
+        }
+      }
+
+      function closePolaroidZoom() {
+        const backdrop = document.getElementById("polaroidBackdrop");
+        if (backdrop) backdrop.classList.remove("active");
+      }
+
+      // Menutup foto jika mengetuk bagian lain di layar
+      window.addEventListener("click", closePolaroidZoom);
+    </script>
+
+    <script>
+      (function () {
+        // --- BUG FIX: Kode Kontrol Pengulangan Lama Dihapus ---
+        // Logika pengulangan lagu kini ditangani 100% oleh Global Audio Controller di bagian <head>.
+
+        // Override Balas WhatsApp langsung ke nomor pengirim tanpa draf teks prefilled
+        window.balasWa = function () {
+          const targetUrl = "https://wa.me/6285888523578";
+          window.open(targetUrl, "_blank");
+        };
+
+        // 1. Love Cursor Trail (Jejak Sentuhan Layar)
+        const trailEmojis = ["💖", "✨", "🌸", "💓", "💘", "⭐"];
+
+        function createTrailParticle(x, y) {
+          try {
+            const particle = document.createElement("div");
+            particle.className = "trail-particle";
+            particle.textContent = trailEmojis[Math.floor(Math.random() * trailEmojis.length)];
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+
+            // Ukuran acak
+            const randomSize = Math.random() * 8 + 12; // 12px s.d 20px
+            particle.style.fontSize = randomSize + "px";
+
+            document.body.appendChild(particle);
+
+            // Hapus setelah selesai animasi
+            setTimeout(() => {
+              particle.remove();
+            }, 1000);
+          } catch (err) {
+            console.error("Particle creation failed safely:", err);
+          }
+        }
+
+        window.addEventListener("mousemove", (e) => {
+          // Buat partikel dengan persentase kemunculan agar tidak terlalu padat
+          if (Math.random() < 0.15) {
+            createTrailParticle(e.clientX, e.clientY);
+          }
+        });
+
+        window.addEventListener("touchmove", (e) => {
+          if (Math.random() < 0.25) {
+            const touch = e.touches[0];
+            createTrailParticle(touch.clientX, touch.clientY);
+          }
+        });
+
+        // 2. Falling Hearts (Efek Hati Berjatuhan Lembut)
+        const fallingEmojis = ["❤️", "💖", "🌸", "💕", "💞"];
+        function createFallingHeart() {
+          try {
+            const heart = document.createElement("div");
+            heart.className = "falling-heart";
+            heart.textContent = fallingEmojis[Math.floor(Math.random() * fallingEmojis.length)];
+
+            // Mengatur ukuran acak
+            const size = Math.random() * 15 + 10; // 10px s.d 25px
+            heart.style.fontSize = size + "px";
+
+            // Mengatur posisi horizontal acak
+            heart.style.left = Math.random() * 100 + "vw";
+
+            // Mengatur kecepatan jatuh acak
+            const duration = Math.random() * 5 + 5; // 5s s.d 10s
+            heart.style.animationDuration = duration + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+              heart.remove();
+            }, duration * 1000);
+          } catch (err) {
+            console.error("Falling heart creation failed safely:", err);
+          }
+        }
+
+        // Meluncurkan butiran hati setiap beberapa saat sekali
+        setInterval(createFallingHeart, 600);
+
+        // 3. Canvas Celebration Engine (Confetti & Smoke)
+        const canvas = document.getElementById("celebration-canvas");
+        if (canvas) {
+          const ctx = canvas.getContext("2d");
+          let particles = [];
+          let animationFrameId = null;
+
+          function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          }
+          window.addEventListener("resize", resizeCanvas);
+          resizeCanvas();
+
+          class ConfettiParticle {
+            constructor(x, y, isHeart = false) {
+              this.x = x;
+              this.y = y;
+              this.size = Math.random() * 8 + 6;
+              this.color = `hsl(${Math.random() * 360}, 100%, 70%)`;
+              if (isHeart) {
+                this.color = ["#ff7675", "#ff5252", "#fd79a8", "#e84393"][Math.floor(Math.random() * 4)];
+              }
+              this.speedX = Math.random() * 10 - 5;
+              this.speedY = Math.random() * -15 - 5;
+              this.gravity = 0.3;
+              this.rotation = Math.random() * 360;
+              this.rotationSpeed = Math.random() * 10 - 5;
+              this.isHeart = isHeart;
+              this.opacity = 1;
+            }
+
+            update() {
+              this.speedY += this.gravity;
+              this.x += this.speedX;
+              this.y += this.speedY;
+              this.rotation += this.rotationSpeed;
+              if (this.y > canvas.height) {
+                this.opacity -= 0.02;
+              }
+            }
+
+            draw() {
+              ctx.save();
+              ctx.translate(this.x, this.y);
+              ctx.rotate((this.rotation * Math.PI) / 180);
+              ctx.globalAlpha = this.opacity;
+              ctx.fillStyle = this.color;
+
+              if (this.isHeart) {
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(-this.size / 2, -this.size / 2, -this.size, 0, 0, this.size);
+                ctx.bezierCurveTo(this.size, 0, this.size / 2, -this.size / 2, 0, 0);
+                ctx.fill();
+              } else {
+                ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+              }
+              ctx.restore();
+            }
+          }
+
+          class SmokeParticle {
+            constructor(x, y) {
+              this.x = x;
+              this.y = y;
+              this.size = Math.random() * 3 + 2;
+              this.speedX = Math.random() * 1 - 0.5;
+              this.speedY = Math.random() * -2 - 1;
+              this.opacity = 0.8;
+              this.growth = 0.4;
+            }
+
+            update() {
+              this.x += this.speedX;
+              this.y += this.speedY;
+              this.size += this.growth;
+              this.opacity -= 0.015;
+            }
+
+            draw() {
+              ctx.save();
+              ctx.globalAlpha = this.opacity;
+              ctx.fillStyle = "rgba(220, 220, 220, 0.6)";
+              ctx.beginPath();
+              ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+              ctx.fill();
+              ctx.restore();
+            }
+          }
+
+          // Trigger Confetti Blast dari koordinat api lilin
+          function triggerConfettiBlast() {
+            const api = document.getElementById("apiLilin") || document.querySelector(".api");
+            let x = canvas.width / 2;
+            let y = canvas.height * 0.6; // default fallback
+
+            if (api) {
+              const rect = api.getBoundingClientRect();
+              x = rect.left + rect.width / 2;
+              y = rect.top + rect.height / 2;
+            }
+
+            for (let i = 0; i < 120; i++) {
+              particles.push(new ConfettiParticle(x, y, Math.random() > 0.4));
+            }
+            if (!animationFrameId) {
+              loop();
+            }
+          }
+
+          // Trigger Smoke tepat dari sumbu api lilin yang ditiup
+          function triggerSmoke() {
+            const api = document.getElementById("apiLilin") || document.querySelector(".api");
+            let x = canvas.width / 2;
+            let y = canvas.height * 0.5; // default fallback
+
+            if (api) {
+              const rect = api.getBoundingClientRect();
+              x = rect.left + rect.width / 2;
+              y = rect.top + rect.height / 2;
+            }
+
+            for (let i = 0; i < 30; i++) {
+              setTimeout(() => {
+                particles.push(new SmokeParticle(x + (Math.random() * 10 - 5), y));
+              }, i * 30);
+            }
+            if (!animationFrameId) {
+              loop();
+            }
+          }
+
+          function loop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles = particles.filter((p) => p.opacity > 0 && p.size > 0);
+
+            particles.forEach((p) => {
+              p.update();
+              p.draw();
+            });
+
+            if (particles.length > 0) {
+              animationFrameId = requestAnimationFrame(loop);
+            } else {
+              animationFrameId = null;
+            }
+          }
+
+          // 4. Interactive Floating Balloons Engine
+          let balloonInterval = null;
+
+          function startBalloons() {
+            if (balloonInterval) return;
+            balloonInterval = setInterval(() => {
+              const balloonColors = [
+                "rgba(255, 118, 117, 0.85)", // Coral pink
+                "rgba(253, 121, 168, 0.85)", // Lavender pink
+                "rgba(232, 67, 147, 0.85)", // Deep pink
+                "rgba(214, 48, 49, 0.85)", // Love red
+              ];
+              const color = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+
+              const balloon = document.createElement("div");
+              balloon.className = "floating-balloon";
+
+              const startLeft = Math.random() * 90 + "vw";
+              const endLeft = Math.random() * 90 + "vw";
+              const endRotation = Math.random() * 40 - 20 + "deg";
+
+              balloon.style.setProperty("--start-left", startLeft);
+              balloon.style.setProperty("--end-left", endLeft);
+              balloon.style.setProperty("--end-rotation", endRotation);
+              balloon.style.color = color;
+
+              // Random size
+              const scale = Math.random() * 0.3 + 0.85; // 0.85 to 1.15
+              balloon.style.transform = `scale(${scale})`;
+
+              // SVG Heart Balloon
+              balloon.innerHTML = `
+              <svg viewBox="0 0 32 40" width="55" height="70">
+                <defs>
+                  <radialGradient id="balloonGrad" cx="30%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <path fill="currentColor" d="M16,28.2 C16,28.2 31,18 31,9.5 C31,4.5 27,0.5 22,0.5 C18.5,0.5 16.5,2.5 16,3.5 C15.5,2.5 13.5,0.5 10,0.5 C5,0.5 1,4.5 1,9.5 C1,18 16,28.2 16,28.2 Z"/>
+                <path fill="url(#balloonGrad)" d="M16,28.2 C16,28.2 31,18 31,9.5 C31,4.5 27,0.5 22,0.5 C18.5,0.5 16.5,2.5 16,3.5 C15.5,2.5 13.5,0.5 10,0.5 C5,0.5 1,4.5 1,9.5 C1,18 16,28.2 16,28.2 Z"/>
+                <!-- Knot at bottom -->
+                <polygon fill="currentColor" points="16,27 13,31 19,31" />
+                <!-- Balloon string -->
+                <path stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" d="M16,30 Q20,35 14,40 T18,50" />
+              </svg>
+            `;
+
+              // Letuskan saat diklik / disentuh
+              balloon.addEventListener("click", (e) => {
+                e.stopPropagation();
+                popBalloon(balloon);
+              });
+              balloon.addEventListener("touchstart", (e) => {
+                e.stopPropagation();
+                popBalloon(balloon);
+              });
+
+              document.body.appendChild(balloon);
+
+              // Hapus balon yang lepas melewati langit
+              setTimeout(() => {
+                balloon.remove();
+              }, 11000);
+            }, 1500);
+          }
+
+          function stopBalloons() {
+            if (balloonInterval) {
+              clearInterval(balloonInterval);
+              balloonInterval = null;
+            }
+          }
+
+          function popBalloon(balloon) {
+            const rect = balloon.getBoundingClientRect();
+            const x = rect.left + rect.width / 2;
+            const y = rect.top + rect.height / 2;
+
+            // Picu percikan konfeti kecil di koordinat balon
+            for (let i = 0; i < 15; i++) {
+              const p = new ConfettiParticle(x, y, true);
+              p.speedX = Math.random() * 6 - 3;
+              p.speedY = Math.random() * 6 - 3;
+              p.gravity = 0.1;
+              p.size = Math.random() * 5 + 3;
+              particles.push(p);
+            }
+            if (!animationFrameId) {
+              loop();
+            }
+
+            // Mainkan audio letusan balon tipis
+            AudioSynth.playFlip();
+
+            // Animasi meletus cepat
+            balloon.style.transform = "scale(0)";
+            balloon.style.opacity = "0";
+            setTimeout(() => {
+              balloon.remove();
+            }, 200);
+          }
+
+          // 5. Safe Method Interception (Menghubungkan Animasi & Sound FX Custom dengan Script Bawaan)
+          try {
+            // Intercept pembukaan amplop
+            const originalBukaEnvelope = window.bukaEnvelope;
+            if (typeof originalBukaEnvelope === "function") {
+              window.bukaEnvelope = function () {
+                // Biarkan script inti bawaan htmlku memutar lagunya secara otomatis
+                originalBukaEnvelope();
+
+                // Mulai interaksi inisialisasi Audio sintetis (Sound FX Web Audio API)
+                AudioSynth.init();
+
+                // BUG FIX: Pemanggilan audio.play() di sini telah dihapus
+                // untuk menghindari bug lagu diputar ganda bersahutan.
+              };
+            }
+
+            // Intercept proses peniupan lilin
+            const originalTiupLilin = window.tiupLilin;
+            window.tiupLilin = function () {
+              if (typeof originalTiupLilin === "function") {
+                originalTiupLilin();
+              } else {
+                const api = document.getElementById("apiLilin");
+                if (api) api.style.display = "none";
+              }
+              // Picu efek suara tiup lilin dan chime magis
+              AudioSynth.playWind();
+              setTimeout(() => {
+                AudioSynth.playChimes();
+              }, 300);
+
+              triggerSmoke();
+              setTimeout(triggerConfettiBlast, 200);
+            };
+
+            // Intercept perpindahan halaman untuk trigger sound effects & balon
+            const originalPindahHal = window.pindahHal;
+            if (typeof originalPindahHal === "function") {
+              window.pindahHal = function (num) {
+                originalPindahHal(num);
+
+                if (num === 3 || num === 4) {
+                  startBalloons();
+                } else {
+                  stopBalloons();
+                }
+
+                if (num === 3) {
+                  // Rayakan transisi masuk ke halaman tiup lilin
+                  AudioSynth.playChimes();
+                  setTimeout(triggerConfettiBlast, 400);
+                }
+              };
+            }
+
+            // Menangkap klik elemen kartu game memori untuk efek suara flip
+            document.addEventListener("click", function (e) {
+              const card = e.target.closest(".card");
+              if (card && !card.classList.contains("flipped") && !card.classList.contains("matched")) {
+                AudioSynth.playFlip();
+              }
+            });
+
+            // Mengawasi status game memori untuk suara keberhasilan
+            const checkGameMatchStatus = setInterval(() => {
+              const matchedCards = document.querySelectorAll(".card.matched");
+              // Jika ada perubahan status kecocokan kartu baru
+              if (matchedCards.length > 0 && matchedCards.length % 2 === 0) {
+                if (!window._lastMatchedCount || matchedCards.length > window._lastMatchedCount) {
+                  window._lastMatchedCount = matchedCards.length;
+                  AudioSynth.playMatch();
+                }
+              }
+            }, 300);
+          } catch (err) {
+            console.error("Failed to intercept template functions safely:", err);
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
